@@ -44,6 +44,8 @@ nav {
     z-index: 100;
 }
 
+.welcome {display: none}
+
 nav h2 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
@@ -177,7 +179,6 @@ footer {
 }
 
 footer > section {
-
     width: 120px;
 }
 
@@ -234,23 +235,93 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Tablets */
+/* Mobile Phones */
 @media only screen and (max-width: 600px) { 
 
     .container {
         max-width: 580px;
-        grid-template-columns: repeat(4, 1fr);
     }
 
     nav {
-        justify-content: center;
+        margin-top: 7px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    header h2 {
-        text-align: center;
+    .welcome, nav h2 {
+        display: block;
+        margin: 0;
+        padding: 0;
     }
+
     nav ul {
         display: none;
+    }
+
+    main {
+        height: 1580px;
+    }
+
+    .date-line {
+        max-width: 90%;
+        margin: 0 auto 30px;
+        padding: 5px 0px;
+        text-align: center;
+    }
+
+    .main-items > section {
+        height: 340px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-image {
+        width: 75%;
+    }
+
+    .item-info > * {
+        text-align: center;
+    }
+
+    .item-button {
+        flex-grow: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    footer > section, .info {
+        width: 100%;
+    }
+
+    .map {
+        padding: 0 0 20px 0;
+        align-items: center;
+    }
+
+    .foot-map {
+        width: 100%;
+    }
+
+    footer li, footer h3 {
+        border: 1px solid #aaa; 
+        padding: 14px 0 14px 20px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    footer h3 {
+        background-color: #ccc;
+        color: #111;
+    }
+
+    footer li {
+        background-color: #111;
+        color: #ccc;
     }
 
 }
