@@ -238,7 +238,7 @@ footer a:hover {
 @media only screen and (max-width: 600px) { 
 
     .container {
-        min-width: 600px;
+        max-width: 580px;
         grid-template-columns: repeat(4, 1fr);
     }
 
